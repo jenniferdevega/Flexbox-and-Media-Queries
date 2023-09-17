@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    background-color:black;
+    padding: 15px;
+}
+
+body{
+    background-image: url(images/books.jpg);
+}
+
+@media screen and (max-width: 4800px) and (min-width: 600px) {
+ 
+    p{
+        font-weight: bold;
+        color: white;
+        background-color: black;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: left;
+            justify-content: space-around;
+            flex-direction: row;
+            position: relative; 
+        }
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px) {
+    img{
+        display: none;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        font-weight: bold;
+        text-align: left;
+
+        .flex-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flex-item{
+            margin: 20px;
+        }
+    }
+}
+
+.flex-item {
+    background-color: white;
+    padding: 1vw;
+    margin: 0.5vw;
+    border-radius: 10px;
+}
+
+.footer{
+    text-align: center;
+    padding: 1%;
+    background-color:black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    margin-bottom: -10px;
+}
